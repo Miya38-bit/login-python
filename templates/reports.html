@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}レポート — login-python{% endblock %}
+{% block body %}
+<h1>レポート</h1>
+<p>権限 <code>reports:view</code> が必要です（管理者のみ）。</p>
+<p class="meta">ログイン中: {{ user.display_name }}</p>
+{% endblock %}

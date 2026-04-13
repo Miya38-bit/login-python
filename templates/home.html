@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}ホーム — login-python{% endblock %}
+{% block body %}
+<h1>ホーム</h1>
+<p>FastAPI のセッション認証・ロール・権限のデモです。</p>
+<ul class="pages">
+  <li><strong>/public</strong> — 誰でも閲覧可</li>
+  <li><strong>/member</strong> — 権限 <code>member:dashboard</code>（一般ユーザー・管理者）</li>
+  <li><strong>/reports</strong> — 権限 <code>reports:view</code>（管理者のみ）</li>
+  <li><strong>/admin</strong> — 権限 <code>admin:panel</code>（管理者のみ）</li>
+</ul>
+<p class="meta">デモユーザー: <code>alice</code> / <code>alicepass</code>（一般）、<code>admin</code> / <code>adminpass</code>（管理者）</p>
+{% endblock %}

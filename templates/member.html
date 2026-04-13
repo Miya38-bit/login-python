@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}会員エリア — login-python{% endblock %}
+{% block body %}
+<h1>会員エリア</h1>
+<p>権限 <code>member:dashboard</code> が必要です。現在: <strong>{{ user.display_name }}</strong></p>
+{% endblock %}

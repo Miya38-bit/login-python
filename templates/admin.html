@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}管理 — login-python{% endblock %}
+{% block body %}
+<h1>管理パネル</h1>
+<p>権限 <code>admin:panel</code> が必要です。</p>
+<p class="meta">ログイン中: {{ user.display_name }}</p>
+{% endblock %}

@@ -15,6 +15,10 @@ build/
 # 環境変数・秘密情報
 .env
 .env.*
+!.env.example
+
+# ローカル専用（AI 向けメモ・個人メモなど、リポジトリに含めない）
+.local/
 
 # エディタ・OS
 .idea/
